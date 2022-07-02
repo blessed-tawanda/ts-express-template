@@ -1,6 +1,6 @@
-import { Request, Response } from "experess";
+import { Request, Response } from "express";
 import logger from "../logger";
-import { response } from "helpers";
+import { response } from "../helpers";
 
 export const notFoundHandler = (req: Request, res: Response) => {
     logger.info(`${req.url} Route not found`);
